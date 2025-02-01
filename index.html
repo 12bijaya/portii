@@ -6,11 +6,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Sai</title>
 
-    <link rel="icon" type="png|image" href="iconic.jpg">
+    <link rel="icon" type="image/png" href="iconic.jpg">
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            background-color: #333;
+            color: white;
+        }
+
+        .header .logo {
+            font-size: 1.5rem;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            transition: background 0.3s;
+        }
+
+        .navbar a:hover, .navbar a.active {
+            background-color: #555;
+        }
+
+        .home {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .home-content {
+            max-width: 800px;
+        }
+
+        .home-sci a {
+            margin: 0 0.5rem;
+            color: #333;
+            font-size: 1.5rem;
+        }
+
+        .home-img {
+            margin-top: 2rem;
+        }
+
+        .home-img img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%;
+        }
+
+        @media (min-width: 768px) {
+            .home {
+                flex-direction: row;
+                justify-content: space-between;
+                text-align: left;
+            }
+
+            .home-content {
+                max-width: 50%;
+            }
+
+            .home-img {
+                max-width: 40%;
+            }
+        }
+    </style>
 </head>
 <body>
 
